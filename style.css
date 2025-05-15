@@ -1,0 +1,113 @@
+body {
+  background-color: #f5f0e6; /* soft beige */
+  margin: 0;
+  padding-bottom: 40px;
+  font-family: Consolas, monospace;
+  color: #5a4c3d;
+}
+
+h1 {
+  background-color: #e9dcc0; /* lighter beige */
+  width: 930px;
+  font-family: Consolas, monospace;
+  margin: 20px auto 15px; /* Removed big top margin */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(90, 76, 61, 0.3);
+}
+
+.subjects-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 15px;
+  flex-wrap: nowrap;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottom-row {
+  max-width: 650px;
+}
+
+.subject-container {
+  text-align: center;
+}
+
+.subject-container img {
+  height: 180px;
+  width: 130px;
+  border-radius: 15px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.subject-container img:hover {
+  transform: scale(1.05);
+}
+
+.subject-label {
+  font-family: Consolas, monospace;
+  font-size: 20px;
+  color: #5a4c3d;
+  margin-top: 8px;
+  user-select: none;
+}
+
+button {
+  padding: 12px 35px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #7a6c5f;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 6px #5a4c3d;
+  font-family: Consolas, monospace;
+  font-size: 16px;
+  margin: 20px auto 0;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a2927d;
+}
+
+button:active {
+  background-color: #a2927d;
+  box-shadow: 0 3px #3e362c;
+  transform: translateY(3px);
+}
+
+footer {
+  background-color: #f5f0e6; /* beige */
+  color: #7a6c5f;
+  font-style: italic;
+  text-align: center;
+  padding: 6px 0;
+  font-family: Consolas, monospace;
+  user-select: none;
+  margin-top: 30px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+}
+
+input[type="number"] {
+  margin-top: 8px;
+  width: 130px;
+  text-align: center;
+  font-size: 16px;
+  font-family: Consolas, monospace;
+  border-radius: 8px;
+  border: 1.5px solid #7a6c5f;
+  padding: 5px 10px;
+  color: #5a4c3d;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #a2927d;
+  box-shadow: 0 0 5px #a2927d;
+}
